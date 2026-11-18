@@ -1,394 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi" class="dark">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>Trade With Munaaf</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:
-linear-gradient(135deg,#020617,#0f172a,#111827);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-overflow:hidden;
-color:#fff;
-}
-
-/* GLOW */
-
-.blur1,
-.blur2{
-position:fixed;
-border-radius:50%;
-filter:blur(90px);
-z-index:-1;
-}
-
-.blur1{
-width:260px;
-height:260px;
-background:#22c55e;
-top:-80px;
-left:-80px;
-opacity:0.25;
-}
-
-.blur2{
-width:260px;
-height:260px;
-background:#3b82f6;
-bottom:-100px;
-right:-100px;
-opacity:0.25;
-}
-
-/* CARD */
-
-.card{
-width:100%;
-max-width:430px;
-
-background:rgba(255,255,255,0.06);
-backdrop-filter:blur(16px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-border-radius:28px;
-
-padding:30px 24px;
-
-box-shadow:
-0 15px 50px rgba(0,0,0,0.6),
-inset 0 1px 1px rgba(255,255,255,0.08);
-
-text-align:center;
-
-position:relative;
-overflow:hidden;
-}
-
-/* TOP TAG */
-
-.top-tag{
-display:inline-block;
-padding:8px 16px;
-border-radius:50px;
-font-size:12px;
-font-weight:700;
-background:rgba(34,197,94,0.12);
-border:1px solid rgba(34,197,94,0.3);
-color:#4ade80;
-margin-bottom:18px;
-}
-
-/* LOGO */
-
-.logo-wrap{
-display:flex;
-justify-content:center;
-margin-bottom:15px;
-}
-
-.logo{
-width:90px;
-height:90px;
-border-radius:50%;
-border:3px solid #facc15;
-padding:4px;
-object-fit:cover;
-
-box-shadow:
-0 0 25px rgba(250,204,21,0.4);
-}
-
-/* HEADING */
-
-h1{
-font-size:28px;
-font-weight:800;
-line-height:1.2;
-margin-bottom:8px;
-
-background:linear-gradient(90deg,#facc15,#ffffff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-}
-
-h2{
-font-size:14px;
-font-weight:500;
-opacity:0.85;
-margin-bottom:18px;
-letter-spacing:1px;
-}
-
-.desc{
-font-size:14px;
-line-height:1.7;
-opacity:0.85;
-margin-bottom:20px;
-}
-
-/* TRUST */
-
-.trust-box{
-display:flex;
-justify-content:space-between;
-gap:10px;
-margin-bottom:18px;
-}
-
-.trust{
-flex:1;
-background:rgba(255,255,255,0.05);
-padding:12px 10px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,0.06);
-font-size:12px;
-font-weight:600;
-}
-
-/* BUTTON */
-
-.btn{
-display:block;
-width:100%;
-text-decoration:none;
-
-background:linear-gradient(90deg,#22c55e,#16a34a);
-
-padding:17px;
-border-radius:14px;
-
-font-size:16px;
-font-weight:700;
-color:#fff;
-
-margin:14px 0;
-
-box-shadow:0 10px 25px rgba(34,197,94,0.35);
-
-transition:0.3s;
-}
-
-.btn:hover{
-transform:translateY(-2px) scale(1.02);
-}
-
-/* FEATURES */
-
-.features{
-margin-top:15px;
-text-align:left;
-}
-
-.feature{
-display:flex;
-align-items:center;
-gap:10px;
-
-background:rgba(255,255,255,0.04);
-
-padding:12px;
-border-radius:12px;
-
-margin-bottom:10px;
-
-font-size:14px;
-}
-
-/* LIVE BOX */
-
-.live{
-margin-top:18px;
-
-background:linear-gradient(90deg,
-rgba(59,130,246,0.15),
-rgba(34,197,94,0.15));
-
-padding:14px;
-border-radius:14px;
-
-border:1px solid rgba(255,255,255,0.08);
-
-font-size:13px;
-line-height:1.7;
-}
-
-/* TIMER */
-
-.timer{
-margin-top:18px;
-font-size:13px;
-font-weight:700;
-color:#facc15;
-
-animation:blink 1s infinite;
-}
-
-@keyframes blink{
-50%{
-opacity:0.5;
-}
-}
-
-/* FOOTER */
-
-.footer{
-margin-top:22px;
-font-size:12px;
-opacity:0.7;
-line-height:1.7;
-}
-
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
-}
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
-}
-
-/* MOBILE */
-
-@media(max-width:480px){
-
-.card{
-padding:26px 18px;
-border-radius:24px;
-}
-
-h1{
-font-size:24px;
-}
-
-.btn{
-font-size:15px;
-padding:15px;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRADE WITH SUDARSHAN REDDY™ - Premium Telegram Channel</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            telegram: '#0088cc',
+            goldAccent: '#F59E0B',
+            cyanAccent: '#00F2FE'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #030712;
+      color: #F9FAFB;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    /* Premium Radiant Ambient Glow */
+    .bg-glow-top {
+      background: radial-gradient(circle at 50% -10%, rgba(0, 242, 254, 0.22) 0%, rgba(245, 158, 11, 0.08) 45%, rgba(3, 7, 18, 1) 90%);
+    }
+
+    /* High-End Glassmorphism Card */
+    .premium-glass-card {
+      background: rgba(17, 24, 39, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 242, 254, 0.12);
+    }
+
+    /* Premium Metallic & Gradient Text */
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF 20%, #F59E0B 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* High-Converting Neon Button Glow */
+    .btn-premium-glow {
+      background: linear-gradient(135deg, #0088cc 0%, #00F2FE 100%);
+      box-shadow: 0 0 30px rgba(0, 242, 254, 0.45);
+    }
+    .btn-premium-glow:hover {
+      box-shadow: 0 0 45px rgba(0, 242, 254, 0.7);
+    }
+
+    /* Subtle Pulse Animation */
+    @keyframes subtlePulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.03); opacity: 0.95; }
+    }
+    .pulse-btn {
+      animation: subtlePulse 2.5s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- PASTE YOUR MANUAL META PIXEL CODE HERE IF NEEDED -->
 </head>
+<body class="min-h-screen flex flex-col justify-between antialiased bg-glow-top relative overflow-x-hidden">
 
-<body>
+  <!-- Background Light Ambient Glow Element -->
+  <div class="absolute top-[-80px] left-1/2 -translate-x-1/2 w-[380px] h-[380px] bg-cyanAccent/15 rounded-full blur-[110px] pointer-events-none"></div>
 
-<div class="blur1"></div>
-<div class="blur2"></div>
+  <!-- Main Section -->
+  <main class="w-full max-w-md mx-auto px-4 py-6 flex-grow flex flex-col justify-center relative z-10">
+    
+    <!-- Hero Glass Card -->
+    <div class="premium-glass-card rounded-3xl p-6 text-center flex flex-col items-center">
+      
+      <!-- Top Badge -->
+      <div class="inline-flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] font-bold text-amber-400 mb-4 tracking-wider uppercase">
+        <i class="fa-solid fa-crown text-amber-400"></i>
+        <span>Official Trading Community</span>
+      </div>
 
-<div class="card">
+      <!-- Channel Logo with Glow Frame -->
+      <div class="relative mb-4">
+        <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-cyanAccent/70 p-1 bg-black/60 shadow-2xl relative">
+          <img 
+            src="https://iili.io/nkREC79.jpg" 
+            alt="TRADE WITH SUDARSHAN REDDY™ Logo" 
+            class="w-full h-full object-cover rounded-full"
+            onerror="this.src='https://placehold.co/150x150/0f172a/00F2FE?text=Sudarshan+Reddy'"
+          >
+        </div>
+        <span class="absolute bottom-1 right-1 bg-emerald-500 border-2 border-gray-900 w-5 h-5 rounded-full shadow-lg" title="Live Channel"></span>
+      </div>
 
-<div class="top-tag">
-🔥 INDIA'S FAST GROWING TRADING COMMUNITY
-</div>
+      <!-- Verified Title -->
+      <div class="flex items-center justify-center gap-2 mb-1">
+        <h1 class="text-xl font-black tracking-tight gold-gradient-text uppercase">TRADE WITH SUDARSHAN REDDY™</h1>
+        <i class="fa-solid fa-circle-check text-cyanAccent text-lg"></i>
+      </div>
 
-<div class="logo-wrap">
-<img src="https://i.ibb.co/HThtfpR7/Whats-App-Image-2026-01-30-at-8-54-08-PM.jpg" class="logo">
-</div>
+      <!-- Subtitle / Tagline -->
+      <p class="text-gray-400 text-xs font-semibold tracking-wide mb-5">
+        Nifty • BankNifty • Price Action Learning
+      </p>
 
-<h1>TRADE WITH MUNAAF</h1>
+      <!-- ======================================================== -->
+      <!-- SINGLE TOP CTA TELEGRAM BUTTON -->
+      <!-- ======================================================== -->
+      <div class="w-full mb-5">
+        <a 
+          href="https://t.me/+bW0WdA1KwhBkNWZl" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full text-white font-extrabold py-4 px-6 rounded-2xl transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-3 text-base tracking-wide btn-premium-glow pulse-btn"
+        >
+          <i class="fa-brands fa-telegram text-2xl"></i>
+          <span>JOIN FREE TELEGRAM</span>
+        </a>
 
-<h2>NIFTY • BANKNIFTY • OPTION CALLS</h2>
+        <p class="text-[11px] text-gray-400 mt-2.5 flex items-center justify-center gap-1.5 font-medium">
+          <i class="fa-solid fa-lock text-cyanAccent text-[10px]"></i> Free Direct Invite Access
+        </p>
+      </div>
 
-<p class="desc">
-Get daily high-probability intraday setups with
-accurate entries, targets & risk management.
-Perfect for beginners and active traders.
-</p>
+      <!-- SEBI Notice Box -->
+      <div class="w-full bg-amber-500/10 border border-amber-500/20 rounded-2xl p-3.5 mb-5 text-left">
+        <div class="flex items-start gap-2.5">
+          <i class="fa-solid fa-triangle-exclamation text-amber-400 text-xs mt-0.5"></i>
+          <p class="text-[11px] text-amber-200/90 leading-relaxed">
+            <strong class="font-bold text-amber-400">SEBI Notice:</strong> Educational purposes only. We share market patterns for learning. We are NOT SEBI Registered.
+          </p>
+        </div>
+      </div>
 
-<div class="trust-box">
+      <!-- Features Box -->
+      <div class="w-full space-y-2.5 text-left">
+        <div class="flex items-center gap-3 bg-white/[0.03] p-3 rounded-2xl border border-white/[0.06]">
+          <div class="w-8 h-8 rounded-xl bg-cyanAccent/10 text-cyanAccent flex items-center justify-center font-bold">
+            <i class="fa-solid fa-chart-candlestick text-sm"></i>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-gray-200">Daily Chart Setups</h3>
+            <p class="text-[11px] text-gray-400">Live Nifty & BankNifty technicals</p>
+          </div>
+        </div>
 
-<div class="trust">
-📈 5000+ Active Traders
-</div>
+        <div class="flex items-center gap-3 bg-white/[0.03] p-3 rounded-2xl border border-white/[0.06]">
+          <div class="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-brain text-sm"></i>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-gray-200">Price Action Strategies</h3>
+            <p class="text-[11px] text-gray-400">Learn market structure & trends</p>
+          </div>
+        </div>
 
-<div class="trust">
-⚡ Live Market Updates
-</div>
+        <div class="flex items-center gap-3 bg-white/[0.03] p-3 rounded-2xl border border-white/[0.06]">
+          <div class="w-8 h-8 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-shield-halved text-sm"></i>
+          </div>
+          <div>
+            <h3 class="text-xs font-bold text-gray-200">100% Free Learning</h3>
+            <p class="text-[11px] text-gray-400">No paid services or stock tips</p>
+          </div>
+        </div>
+      </div>
 
-</div>
+    </div>
 
-<!-- BUTTON -->
+  </main>
 
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 JOIN FREE TELEGRAM NOW
-</a>
+  <!-- Footer Section -->
+  <footer class="w-full max-w-md mx-auto px-4 pb-8 pt-2 text-center text-xs text-gray-500 space-y-4 relative z-10">
+    
+    <!-- Promoted By Agency Badge -->
+    <div>
+      <a 
+        href="https://t.me/+xDWG1yGIaWdmYzhl" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-white/[0.03] border border-white/10 hover:border-cyanAccent/50 text-gray-300 px-4 py-2 rounded-full text-xs transition-all duration-300 group shadow-lg"
+      >
+        <span class="text-gray-400 text-[11px]">Promoted By</span>
+        <span class="font-bold text-white group-hover:text-cyanAccent transition-colors">AD NOVA AGENCY</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-cyanAccent"></i>
+      </a>
+    </div>
 
-<!-- FEATURES -->
+    <!-- Legal Policy Modal Triggers -->
+    <div class="flex justify-center items-center space-x-4 text-[11px] text-gray-400">
+      <button onclick="openModal('privacyModal')" class="hover:text-white transition-colors">Privacy Policy</button>
+      <span>•</span>
+      <button onclick="openModal('termsModal')" class="hover:text-white transition-colors">Terms of Service</button>
+      <span>•</span>
+      <button onclick="openModal('disclaimerModal')" class="hover:text-white transition-colors">SEBI Disclaimer</button>
+    </div>
 
-<div class="features">
+    <!-- Meta Ads Policy Compliance -->
+    <div class="text-[10px] text-gray-500 leading-relaxed px-2 space-y-2 border-t border-white/5 pt-4">
+      <p>
+        <strong>Disclaimer:</strong> Content shared is strictly for educational and informational purposes. We do not provide trading tips or financial advice. Trading involves risk.
+      </p>
+      <p>
+        This site is independent and not endorsed or sponsored by Meta Platforms, Inc. or Facebook. FACEBOOK is a registered trademark of META PLATFORMS, INC.
+      </p>
+    </div>
 
-<div class="feature">
-✅ 5–7 Premium Setups Daily
-</div>
+    <p class="text-[10px] text-gray-600">
+      &copy; <script>document.write(new Date().getFullYear())</script> TRADE WITH SUDARSHAN REDDY™. All Rights Reserved.
+    </p>
 
-<div class="feature">
-✅ Exact Entry • SL • Targets
-</div>
+  </footer>
 
-<div class="feature">
-✅ Beginner Friendly Guidance
-</div>
+  <!-- Privacy Modal -->
+  <div id="privacyModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden z-50 flex items-center justify-center p-4">
+    <div class="premium-glass-card border border-white/10 w-full max-w-lg rounded-2xl p-6 text-left max-h-[80vh] overflow-y-auto">
+      <h3 class="text-lg font-bold text-white mb-3">Privacy Policy</h3>
+      <p class="text-xs text-gray-300 leading-relaxed mb-4">
+        We value your privacy. This website does not capture, store, or sell any personal information. All redirection goes directly to Telegram.
+      </p>
+      <button onclick="closeModal('privacyModal')" class="w-full bg-white/10 text-white font-semibold py-2.5 rounded-xl text-xs hover:bg-white/20 transition-all">Close</button>
+    </div>
+  </div>
 
-<div class="feature">
-✅ Fast News & Live Updates
-</div>
+  <!-- Terms Modal -->
+  <div id="termsModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden z-50 flex items-center justify-center p-4">
+    <div class="premium-glass-card border border-white/10 w-full max-w-lg rounded-2xl p-6 text-left max-h-[80vh] overflow-y-auto">
+      <h3 class="text-lg font-bold text-white mb-3">Terms of Service</h3>
+      <p class="text-xs text-gray-300 leading-relaxed mb-4">
+        All market analysis provided is strictly for educational & self-study purposes. Users are responsible for their own investment risk management.
+      </p>
+      <button onclick="closeModal('termsModal')" class="w-full bg-white/10 text-white font-semibold py-2.5 rounded-xl text-xs hover:bg-white/20 transition-all">Close</button>
+    </div>
+  </div>
 
-</div>
+  <!-- Disclaimer Modal -->
+  <div id="disclaimerModal" class="fixed inset-0 bg-black/80 backdrop-blur-md hidden z-50 flex items-center justify-center p-4">
+    <div class="premium-glass-card border border-white/10 w-full max-w-lg rounded-2xl p-6 text-left max-h-[80vh] overflow-y-auto">
+      <h3 class="text-lg font-bold text-white mb-3">SEBI & Risk Disclaimer</h3>
+      <p class="text-xs text-gray-300 leading-relaxed mb-4">
+        We are NOT SEBI Registered analysts or advisors. No content should be considered trading recommendations. Stock market trading carries inherent market risks.
+      </p>
+      <button onclick="closeModal('disclaimerModal')" class="w-full bg-white/10 text-white font-semibold py-2.5 rounded-xl text-xs hover:bg-white/20 transition-all">Close</button>
+    </div>
+  </div>
 
-<!-- LIVE -->
-
-<div class="live">
-🔥 Today's Market Opportunities Are Live <br>
-Join Now Before Free Access Ends
-</div>
-
-<!-- BUTTON -->
-
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-💰 START FREE TODAY
-</a>
-
-<div class="timer">
-⏳ Limited Time Free Access
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
-
-Powered by
-<a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
-AdsBuild Agency
-</a>
-
-<div class="risk">
-⚠ Market investments are subject to market risk
-</div>
-
-</div>
-
-</div>
-
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+  </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4234076933558700');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4234076933558700&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
